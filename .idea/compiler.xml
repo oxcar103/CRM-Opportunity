@@ -6,8 +6,16 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="CRM-Opportunity" />
+        <module name="CRM-Opportunityy" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="CRM-Opportunity" target="11" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="CRM-Opportunityy" options="-parameters" />
+    </option>
   </component>
 </project>
