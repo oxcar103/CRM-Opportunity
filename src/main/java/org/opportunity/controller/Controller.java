@@ -6,10 +6,8 @@ import org.opportunity.services.Service;
 import org.springframework.web.bind.annotation.*;
 
 import java.text.ParseException;
-import java.text.SimpleDateFormat;
-import java.util.Date;
+import java.time.LocalDate;
 import java.util.List;
-import java.util.Locale;
 import java.util.Map;
 
 @RestController
@@ -27,9 +25,7 @@ public class Controller {
     }
     @PostMapping("Contacts")
     public List<Action> getActions(@RequestBody String body) throws ParseException {
-        String strDate = (body.split("=|&"))[1];
-        SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd", Locale.ENGLISH);
-        Date date = formatter.parse(strDate);
+        LocalDate date = LocalDate.now();
         return List.of(
                 new Action("Alice", VIA.EMAIL, date),
                 new Action("Bob", VIA.PHONE, date),

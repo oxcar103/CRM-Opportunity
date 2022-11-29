@@ -1,11 +1,11 @@
 package org.opportunity.entity;
 
-import java.util.Date;
+import java.time.LocalDate;
 
 public class Contact extends Action {
     public String Resume;
 
-    public Contact(String name, VIA via, Date date, String resume) {
+    public Contact(String name, VIA via, LocalDate date, String resume) {
         super(name, via, date);
         Resume = resume;
     }

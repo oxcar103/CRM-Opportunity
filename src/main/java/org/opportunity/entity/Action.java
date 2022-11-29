@@ -1,13 +1,13 @@
 package org.opportunity.entity;
 
-import java.util.Date;
+import java.time.LocalDate;
 
 public class Action {
     public String Name;
     public VIA via;
-    public Date date;
+    public LocalDate date;
 
-    public Action(String name, VIA via, Date date) {
+    public Action(String name, VIA via, LocalDate date) {
         Name = name;
         this.via = via;
         this.date = date;
@@ -29,11 +29,9 @@ public class Action {
         this.via = via;
     }
 
-    public Date getDate() {
-        return date;
-    }
+    public LocalDate getDate() {  return date;  }
 
-    public void setDate(Date date) {
+    public void setDate(LocalDate date) {
         this.date = date;
     }
 }
