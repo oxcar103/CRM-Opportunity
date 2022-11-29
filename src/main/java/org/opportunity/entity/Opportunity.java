@@ -1,22 +1,29 @@
 package org.opportunity.entity;
 
+import com.sun.istack.NotNull;
+
+import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
 public class Opportunity {
-    public String Name;
+    public String name;
     public List<Action> actions;
 
-    public Opportunity(String name, List<Action> actions) {
-        Name = name;
+    public Opportunity(String name, @NotNull List<Action> actions) {
+        this.name = name;
         this.actions = actions;
     }
 
+    public Opportunity() {
+    }
+
     public String getName() {
-        return Name;
+        return name;
     }
 
     public void setName(String name) {
-        Name = name;
+        this.name = name;
     }
 
     public List<Action> getActions() {
