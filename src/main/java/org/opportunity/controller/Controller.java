@@ -24,7 +24,7 @@ public class Controller {
         }
     }
     @PostMapping("Contacts")
-    public List<Action> getActions(@RequestBody String body) throws ParseException {
+    public List<Action> getActions(@RequestBody String body) throws Exception {
         LocalDate date = LocalDate.now();
         return List.of(
                 new Action("Alice", VIA.EMAIL, date),
