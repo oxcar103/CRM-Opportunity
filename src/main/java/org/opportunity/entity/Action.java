@@ -2,17 +2,12 @@ package org.opportunity.entity;
 
 import java.util.Date;
 
-enum Via{
-    EMAIL,
-    PHONE,
-    VISIT
-}
 public class Action {
     public String Name;
-    public Via via;
+    public VIA via;
     public Date date;
 
-    public Action(String name, Via via, Date date) {
+    public Action(String name, VIA via, Date date) {
         Name = name;
         this.via = via;
         this.date = date;
@@ -26,11 +21,11 @@ public class Action {
         Name = name;
     }
 
-    public Via getVia() {
+    public VIA getVia() {
         return via;
     }
 
-    public void setVia(Via via) {
+    public void setVia(VIA via) {
         this.via = via;
     }
 

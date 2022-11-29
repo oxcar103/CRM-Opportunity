@@ -5,7 +5,7 @@ import java.util.Date;
 public class Contact extends Action {
     public String Resume;
 
-    public Contact(String name, Via via, Date date, String resume) {
+    public Contact(String name, VIA via, Date date, String resume) {
         super(name, via, date);
         Resume = resume;
     }
