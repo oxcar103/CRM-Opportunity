@@ -2,6 +2,7 @@ package org.opportunity;
 
 import org.aspectj.weaver.bcel.ExceptionRange;
 import org.junit.jupiter.api.Test;
+import org.opportunity.entity.Contact;
 import org.opportunity.entity.FutureAction;
 import org.opportunity.entity.InvalidDateException;
 import org.opportunity.entity.VIA;
@@ -42,5 +43,16 @@ class OpportunityApplicationTests {
 		}
 	}
 
+	@Test
+	void Contact_PastDate_CorrectInitialization() throws Exception {
+		LocalDate date = LocalDate.now();
+		Contact action = new Contact ("Juan", VIA.EMAIL, date.plusDays(1), "Presentation");
+
+		assert action instanceof Contact;
+		assert action.getName() == "Juan";
+		assert action.getVia() == VIA.EMAIL;
+		assert Objects.equals(date.plusDays(1), action.getDate());
+		assert action.getResume() == "Presentation";
+	}
 
 }
