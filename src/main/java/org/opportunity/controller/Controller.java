@@ -1,11 +1,12 @@
 package org.opportunity.controller;
 
 import org.opportunity.entity.Action;
+import org.opportunity.entity.Contact;
+import org.opportunity.entity.FutureAction;
 import org.opportunity.entity.VIA;
 import org.opportunity.services.Service;
 import org.springframework.web.bind.annotation.*;
 
-import java.text.ParseException;
 import java.time.LocalDate;
 import java.util.List;
 import java.util.Map;
@@ -27,9 +28,9 @@ public class Controller {
     public List<Action> getActions(@RequestBody String body) throws Exception {
         LocalDate date = LocalDate.now();
         return List.of(
-                new Action("Alice", VIA.EMAIL, date),
-                new Action("Bob", VIA.PHONE, date),
-                new Action("Carol", VIA.VISIT, date)
+                new Contact("Alice", VIA.EMAIL, date, "Presentation"),
+                new Contact("Bob", VIA.PHONE, date, "Sending Information"),
+                new FutureAction("Carol", VIA.VISIT, date)
         );
     }
 
