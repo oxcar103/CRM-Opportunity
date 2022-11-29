@@ -55,4 +55,14 @@ class OpportunityApplicationTests {
 		assert action.getResume() == "Presentation";
 	}
 
+	@Test
+	void Contact_FutureDate_Exception() throws InvalidDateException {
+		try {
+			LocalDate date = LocalDate.now();
+			new Contact("Juan", VIA.EMAIL, date.plusDays(1), "Presentation");
+			assert false;
+		} catch (InvalidDateException e) {
+			assert true;
+		}
+	}
 }
