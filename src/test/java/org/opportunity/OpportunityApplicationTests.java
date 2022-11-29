@@ -46,7 +46,7 @@ class OpportunityApplicationTests {
 	@Test
 	void Contact_PastDate_CorrectInitialization() throws Exception {
 		LocalDate date = LocalDate.now();
-		Contact action = new Contact ("Juan", VIA.EMAIL, date.plusDays(1), "Presentation");
+		Contact action = new Contact ("Juan", VIA.EMAIL, date.minusDays(1), "Presentation");
 
 		assert action instanceof Contact;
 		assert action.getName() == "Juan";
