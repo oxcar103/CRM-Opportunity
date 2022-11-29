@@ -3,18 +3,18 @@ package org.opportunity.entity;
 import java.time.LocalDate;
 
 public class Contact extends Action {
-    public String Resume;
+    public String resume;
 
     public Contact(String name, VIA via, LocalDate date, String resume) throws Exception {
         super(name, via, date);
-        Resume = resume;
+        this.resume = resume;
     }
 
     public String getResume() {
-        return Resume;
+        return resume;
     }
 
     public void setResume(String resume) {
-        Resume = resume;
+        this.resume = resume;
     }
 }
