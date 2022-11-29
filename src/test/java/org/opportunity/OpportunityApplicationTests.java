@@ -21,7 +21,7 @@ class OpportunityApplicationTests {
 	}
 
 	@Test
-	void Action_FutureDate_CorrectInitialization() throws Exception {
+	void FutureAction_FutureDate_CorrectInitialization() throws Exception {
 		LocalDate date = LocalDate.now();
 		FutureAction action = new FutureAction("Juan", VIA.EMAIL, date.plusDays(1));
 
@@ -32,7 +32,7 @@ class OpportunityApplicationTests {
 	}
 
 	@Test
-	void Action_PastDate_Exception() throws InvalidDateException {
+	void FutureAction_PastDate_Exception() throws InvalidDateException {
 		try {
 			LocalDate date = LocalDate.now();
 			new FutureAction("Juan", VIA.EMAIL, date.minusDays(1));
@@ -41,4 +41,6 @@ class OpportunityApplicationTests {
 			assert true;
 		}
 	}
+
+
 }
