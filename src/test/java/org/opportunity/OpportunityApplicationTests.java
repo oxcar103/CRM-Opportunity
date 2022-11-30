@@ -109,11 +109,11 @@ class OpportunityApplicationTests {
 		String reason = "Item sold";
 		List<Action> actions = List.of(new Contact(name, VIA.EMAIL, LocalDate.now(), "Presentation"));
 
-		Client opp = new Client(name, actions, reason);
+		Client cli = new Client(name, actions, reason);
 
-		assert Objects.equals(opp.getName(), name);
-		assert Objects.equals(opp.getActions(), actions);
-		assert Objects.equals(opp.getReason(), reason);
+		assert Objects.equals(cli.getName(), name);
+		assert Objects.equals(cli.getActions(), actions);
+		assert Objects.equals(cli.getReason(), reason);
 	}
 
 	@Test
@@ -127,5 +127,19 @@ class OpportunityApplicationTests {
 		} catch (NullPointerException e){
 			assert true;
 		}
+	}
+
+	@Test
+	void Client_PreviousOpportunity_ValidInitialization() throws InvalidDateException, NullPointerException {
+		String name = "Juan";
+		String reason = "Item sold";
+		List<Action> actions = List.of(new Contact(name, VIA.EMAIL, LocalDate.now(), "Presentation"));
+
+		Opportunity opp = new Opportunity(name, actions);
+		Client cli = new Client(opp, reason);
+
+		assert Objects.equals(cli.getName(), name);
+		assert Objects.equals(cli.getActions(), actions);
+		assert Objects.equals(cli.getReason(), reason);
 	}
 }

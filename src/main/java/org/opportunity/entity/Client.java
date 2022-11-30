@@ -1,17 +1,19 @@
 package org.opportunity.entity;
 
+import com.sun.istack.NotNull;
+
 import java.util.Iterator;
 import java.util.List;
 
 public class Client extends Opportunity{
     public String reason;
     Iterator<Action> sale;
-    public Client(String name, List<Action> actions, String reason, Iterator<Action> sale) throws NullPointerException {
+    public Client(String name, @NotNull List<Action> actions, String reason, Iterator<Action> sale) throws NullPointerException {
         super(name, actions);
         this.reason = reason;
         this.sale = sale;
     }
-    public Client(String name, List<Action> actions, String reason) throws NullPointerException {
+    public Client(String name, @NotNull List<Action> actions, String reason) throws NullPointerException {
         this(name, actions, reason, actions.listIterator());
 
         while(sale.hasNext())
