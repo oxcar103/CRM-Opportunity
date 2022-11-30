@@ -4,22 +4,22 @@ import java.time.LocalDate;
 
 
 public abstract class Action {
-    public String Name;
+    public String name;
     public VIA via;
     public LocalDate date;
 
     public Action(String name, VIA via, LocalDate date){
-        Name = name;
+        this.name = name;
         this.via = via;
         this.date = date;
     }
 
     public String getName() {
-        return Name;
+        return name;
     }
 
     public void setName(String name) {
-        Name = name;
+        this.name = name;
     }
 
     public VIA getVia() {

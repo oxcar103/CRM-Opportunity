@@ -107,7 +107,8 @@ class OpportunityApplicationTests {
 	void Client_ValidContacts_CorrectInitialization() throws InvalidDateException, NullPointerException {
 		String name = "Juan";
 		String reason = "Item sold";
-		List<Action> actions = List.of(new Contact(name, VIA.EMAIL, LocalDate.now(), "Presentation"));
+		List<Action> actions = List.of(new Contact(name, VIA.EMAIL, LocalDate.now(), "Presentation"),
+				new Contact(name, VIA.VISIT, LocalDate.now(), "Information"));
 
 		Client cli = new Client(name, actions, reason);
 

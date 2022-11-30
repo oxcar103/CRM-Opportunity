@@ -14,7 +14,7 @@ public class Client extends Opportunity{
         this.sale = sale;
     }
     public Client(String name, @NotNull List<Action> actions, String reason) throws NullPointerException {
-        this(name, actions, reason, actions.listIterator());
+        this(name, actions, reason, actions.iterator());
 
         while(sale.hasNext())
             sale.next();
@@ -39,5 +39,4 @@ public class Client extends Opportunity{
     public void setSale(Iterator<Action> sale) {
         this.sale = sale;
     }
-
 }
