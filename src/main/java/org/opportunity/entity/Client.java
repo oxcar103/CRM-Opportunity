@@ -1,10 +1,7 @@
 package org.opportunity.entity;
 
-import com.sun.istack.NotNull;
-
 import java.util.Iterator;
 import java.util.List;
-import java.util.ListIterator;
 
 public class Client extends Opportunity{
     public String reason;
@@ -19,6 +16,10 @@ public class Client extends Opportunity{
 
         while(sale.hasNext())
             sale.next();
+    }
+
+    public Client(Opportunity opp, String reason){
+        this(opp.getName(), opp.getActions(), reason);
     }
 
     public String getReason() {
