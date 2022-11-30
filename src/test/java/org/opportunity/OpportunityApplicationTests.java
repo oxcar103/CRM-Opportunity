@@ -103,4 +103,29 @@ class OpportunityApplicationTests {
 			assert true;
 		}
 	}
+	@Test
+	void Client_ValidContacts_CorrectInitialization() throws InvalidDateException, NullPointerException {
+		String name = "Juan";
+		String reason = "Item sold";
+		List<Action> actions = List.of(new Contact(name, VIA.EMAIL, LocalDate.now(), "Presentation"));
+
+		Client opp = new Client(name, actions, reason);
+
+		assert Objects.equals(opp.getName(), name);
+		assert Objects.equals(opp.getActions(), actions);
+		assert Objects.equals(opp.getReason(), reason);
+	}
+
+	@Test
+	void Client_NoContacts_NullPointerException(){
+		String name = "Juan";
+		String reason = "Item sold";
+
+		try {
+			new Client(name, null, reason);
+			assert false;
+		} catch (NullPointerException e){
+			assert true;
+		}
+	}
 }
