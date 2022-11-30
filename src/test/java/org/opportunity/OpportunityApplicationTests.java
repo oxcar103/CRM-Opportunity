@@ -1,13 +1,12 @@
 package org.opportunity;
 
 import org.junit.jupiter.api.Test;
-import org.opportunity.entity.Contact;
-import org.opportunity.entity.FutureAction;
-import org.opportunity.entity.InvalidDateException;
-import org.opportunity.entity.VIA;
+import org.opportunity.entity.*;
 import org.springframework.boot.test.context.SpringBootTest;
 
+import javax.management.InvalidAttributeValueException;
 import java.time.LocalDate;
+import java.util.List;
 import java.util.Objects;
 
 @SpringBootTest
@@ -83,4 +82,26 @@ class OpportunityApplicationTests {
 		assert Objects.equals(action.getResume(), "Presentation");
 	}
 
+	@Test
+	void Opportunity_ValidContacts_CorrectInitialization() throws InvalidDateException, InvalidAttributeValueException {
+		String name = "Juan";
+		List<Action> actions = List.of(new Contact(name, VIA.EMAIL, LocalDate.now(), "Presentation"));
+
+		Opportunity opp = new Opportunity(name, actions);
+
+		assert Objects.equals(opp.getName(), name);
+		assert Objects.equals(opp.getActions(), actions);
+	}
+
+	@Test
+	void Opportunity_NoContacts_InvalidAttributeValueException(){
+		String name = "Juan";
+
+		try {
+			new Opportunity(null, null);
+			assert false;
+		} catch (InvalidAttributeValueException e){
+			assert true;
+		}
+	}
 }
