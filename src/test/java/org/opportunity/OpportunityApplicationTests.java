@@ -29,10 +29,20 @@ class OpportunityApplicationTests {
 	}
 
 	@Test
-	void FutureAction_PastDate_Exception(){
+	void FutureAction_PastDate_InvalidDateException(){
 		try {
 			LocalDate date = LocalDate.now();
 			new FutureAction("Juan", VIA.EMAIL, date.minusDays(1));
+			assert false;
+		} catch (InvalidDateException e){
+			assert true;
+		}
+	}
+
+	@Test
+	void FutureAction_RightNow_InvalidDateException(){
+		try {
+			new FutureAction("Juan", VIA.EMAIL, LocalDate.now());
 			assert false;
 		} catch (InvalidDateException e){
 			assert true;
@@ -52,7 +62,7 @@ class OpportunityApplicationTests {
 	}
 
 	@Test
-	void Contact_FutureDate_Exception(){
+	void Contact_FutureDate_InvalidDateException(){
 		try {
 			LocalDate date = LocalDate.now();
 			new Contact("Juan", VIA.EMAIL, date.plusDays(1), "Presentation");
@@ -61,4 +71,16 @@ class OpportunityApplicationTests {
 			assert true;
 		}
 	}
+
+	@Test
+	void Contact_RightNow_CorrectInitialization() throws InvalidDateException {
+		LocalDate date = LocalDate.now();
+		Contact action = new Contact("Juan", VIA.EMAIL, date, "Presentation");
+
+		assert Objects.equals(action.getName(), "Juan");
+		assert action.getVia() == VIA.EMAIL;
+		assert Objects.equals(date, action.getDate());
+		assert Objects.equals(action.getResume(), "Presentation");
+	}
+
 }
