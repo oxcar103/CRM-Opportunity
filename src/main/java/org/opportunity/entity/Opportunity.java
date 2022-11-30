@@ -8,12 +8,10 @@ public class Opportunity {
     public String name;
     public List<Action> actions;
 
-    public Opportunity(String name, @NotNull List<Action> actions) {
+    public Opportunity(java.lang.String name, @NotNull List<Action> actions) throws NullPointerException{
+        if (actions.isEmpty()) throw new NullPointerException("You can't create opportunity without contacts");
         this.name = name;
         this.actions = actions;
-    }
-
-    public Opportunity() {
     }
 
     public String getName() {

@@ -6,19 +6,19 @@ import java.util.List;
 public class Client extends Opportunity{
     public String reason;
     Iterator<Action> sale;
-    public Client(String name, List<Action> actions, String reason, Iterator<Action> sale) {
+    public Client(String name, List<Action> actions, String reason, Iterator<Action> sale) throws NullPointerException {
         super(name, actions);
         this.reason = reason;
         this.sale = sale;
     }
-    public Client(String name, List<Action> actions, String reason) {
+    public Client(String name, List<Action> actions, String reason) throws NullPointerException {
         this(name, actions, reason, actions.listIterator());
 
         while(sale.hasNext())
             sale.next();
     }
 
-    public Client(Opportunity opp, String reason){
+    public Client(Opportunity opp, String reason) throws NullPointerException {
         this(opp.getName(), opp.getActions(), reason);
     }
 
