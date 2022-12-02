@@ -8,6 +8,8 @@ import java.time.LocalDate;
 import java.util.List;
 import java.util.Objects;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
 @SpringBootTest
 class OpportunityApplicationTests {
 
@@ -142,5 +144,10 @@ class OpportunityApplicationTests {
 		assert Objects.equals(cli.getName(), name);
 		assert Objects.equals(cli.getActions(), actions);
 		assert Objects.equals(cli.getReason(), reason);
+	}
+
+	@Test
+	void checkGetData(String token) {
+		assertEquals(token, "{\"usuario\" : \"Raulma19\", \"password\" : \"Password123\"}");
 	}
 }
