@@ -1,0 +1,450 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="c466f02d-e197-4515-ada6-b0939280940b" name="Changes" comment="Adding Front&#10;Most code is from user [@JSalram](https://github.com/JSalram) but adapted to my own code">
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Front/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Front/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Front/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Front/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Front/public/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Front/public/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Front/public/logo192.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Front/public/manifest.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Front/src/App.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Front/src/App.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Front/src/components/Home.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Front/src/components/Login.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Front/src/index.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Front/src/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Front/src/services/APIService.js" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="JpbToolWindowState">
+    <option name="myId2FirstActivated">
+      <map>
+        <entry key="com.haulmont.jpb.jpaStructure" value="true" />
+      </map>
+    </option>
+    <option name="myId2Visible">
+      <map>
+        <entry key="com.haulmont.jpb.jpaStructure" value="false" />
+      </map>
+    </option>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2IDRs9kxVKZYmKXMfoNRhRL7KBe" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/Oscar.Bermudez/source/repos/CRM-Opportunity",
+    "spring.configuration.checksum": "8aaab33740413527c3d6f2be39c6ed2c"
+  }
+}]]></component>
+  <component name="RunManager" selected="Spring Boot.OpportunityApplication">
+    <configuration name="OpportunityApplicationTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="opportunity" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.opportunity.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.opportunity" />
+      <option name="MAIN_CLASS_NAME" value="org.opportunity.OpportunityApplicationTests" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="OpportunityApplicationTests.Client_ValidContacts_CorrectInitialization" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="opportunity" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.opportunity.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.opportunity" />
+      <option name="MAIN_CLASS_NAME" value="org.opportunity.OpportunityApplicationTests" />
+      <option name="METHOD_NAME" value="Client_ValidContacts_CorrectInitialization" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="OpportunityApplicationTests.FutureAction_FutureDate_CorrectInitialization" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="opportunity" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.opportunity.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.opportunity" />
+      <option name="MAIN_CLASS_NAME" value="org.opportunity.OpportunityApplicationTests" />
+      <option name="METHOD_NAME" value="FutureAction_FutureDate_CorrectInitialization" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="OpportunityApplicationTests.checkGetData" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="opportunity" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.opportunity.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.opportunity" />
+      <option name="MAIN_CLASS_NAME" value="org.opportunity.OpportunityApplicationTests" />
+      <option name="METHOD_NAME" value="checkGetData(java.lang.String)" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="OpportunityApplicationTests.compruebaRecibeDatos" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="opportunity" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.opportunity.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.opportunity" />
+      <option name="MAIN_CLASS_NAME" value="org.opportunity.OpportunityApplicationTests" />
+      <option name="METHOD_NAME" value="compruebaRecibeDatos(java.lang.String)" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="OpportunityApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="opportunity" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="org.opportunity.OpportunityApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.OpportunityApplicationTests.checkGetData" />
+        <item itemvalue="JUnit.OpportunityApplicationTests.compruebaRecibeDatos" />
+        <item itemvalue="JUnit.OpportunityApplicationTests" />
+        <item itemvalue="JUnit.OpportunityApplicationTests.Client_ValidContacts_CorrectInitialization" />
+        <item itemvalue="JUnit.OpportunityApplicationTests.FutureAction_FutureDate_CorrectInitialization" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c466f02d-e197-4515-ada6-b0939280940b" name="Changes" comment="" />
+      <created>1669714373220</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1669714373220</updated>
+      <workItem from="1669714374414" duration="8145000" />
+      <workItem from="1669724432323" duration="29920000" />
+    </task>
+    <task id="LOCAL-00001" summary="Fixing bugs">
+      <created>1669714449402</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1669714449402</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Model-View-Controller Structure">
+      <created>1669718968845</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1669718968845</updated>
+    </task>
+    <task id="LOCAL-00003" summary="VIA class in a new file">
+      <created>1669721318333</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1669721318333</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Client/Opportunity classes">
+      <created>1669724626804</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1669724626804</updated>
+    </task>
+    <task id="LOCAL-00005" summary="User class">
+      <created>1669724649611</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1669724649611</updated>
+    </task>
+    <task id="LOCAL-00006" summary="First Test: Correct Action">
+      <created>1669730810743</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1669730810743</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Second Test: Incorrect Date (Fail)">
+      <created>1669734871149</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1669734871149</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Second Test: Incorrect Date (Success)">
+      <created>1669734890778</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1669734890778</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Refactor FutureAction">
+      <created>1669735687519</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1669735687519</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Making tests pass">
+      <created>1669735730900</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1669735730900</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Minor Changes">
+      <created>1669735746127</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1669735746127</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Changing Test Names">
+      <created>1669735836639</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1669735836639</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Third test: Correct Contact">
+      <created>1669736094769</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1669736094769</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Forth test: Incorrect Date (Fail)">
+      <created>1669736292364</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1669736292364</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Forth test: Incorrect Date (Success)">
+      <created>1669736535310</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1669736535310</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Correcting Third Test">
+      <created>1669736587682</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1669736587682</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Minor Changes&#10;Reducing Warnings">
+      <created>1669737013039</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1669737013039</updated>
+    </task>
+    <task id="LOCAL-00018" summary="Constructor from parent class">
+      <created>1669798727245</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1669798727245</updated>
+    </task>
+    <task id="LOCAL-00019" summary="Minor changes&#10;Unneeded imports">
+      <created>1669798847426</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1669798847426</updated>
+    </task>
+    <task id="LOCAL-00020" summary="Testing if date is right now">
+      <created>1669799450029</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1669799450029</updated>
+    </task>
+    <task id="LOCAL-00021" summary="FutureAction corrected test">
+      <created>1669799711174</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1669799711174</updated>
+    </task>
+    <task id="LOCAL-00022" summary="Opportunity Tests">
+      <created>1669806383813</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1669806383813</updated>
+    </task>
+    <task id="LOCAL-00023" summary="Tests success&#10;Opportunity throwing NullPointerException">
+      <created>1669806822314</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1669806822314</updated>
+    </task>
+    <task id="LOCAL-00024" summary="Minor Changes">
+      <created>1669806865373</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1669806865373</updated>
+    </task>
+    <task id="LOCAL-00025" summary="Testing Client">
+      <created>1669807401947</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1669807401947</updated>
+    </task>
+    <task id="LOCAL-00026" summary="Building Client from Opportunity">
+      <created>1669807724628</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1669807724628</updated>
+    </task>
+    <task id="LOCAL-00027" summary="Minor Changes">
+      <created>1669818441932</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1669818441932</updated>
+    </task>
+    <task id="LOCAL-00028" summary="Minor Changes">
+      <created>1669978517133</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1669978517133</updated>
+    </task>
+    <task id="LOCAL-00029" summary="Minor Changes&#10;Test Get/Post mapping">
+      <created>1669978721590</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1669978721590</updated>
+    </task>
+    <task id="LOCAL-00030" summary="Login methods">
+      <created>1669978777567</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1669978777567</updated>
+    </task>
+    <task id="LOCAL-00031" summary="Relocating files to Back folder">
+      <created>1669980019618</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1669980019618</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Second Test: Incorrect Date (Fail)" />
+    <MESSAGE value="Second Test: Incorrect Date (Succes)" />
+    <MESSAGE value="Second Test: Incorrect Date (Success)" />
+    <MESSAGE value="Refactor FutureAction" />
+    <MESSAGE value="Making tests pass" />
+    <MESSAGE value="Changing Test Names" />
+    <MESSAGE value="Third test: Correct Contact" />
+    <MESSAGE value="Forth test: Incorrect Date (Fail)" />
+    <MESSAGE value="Forth test: Incorrect Date (Success)" />
+    <MESSAGE value="Correcting Third Test" />
+    <MESSAGE value="Minor Changes&#10;Reducing Warnings" />
+    <MESSAGE value="Constructor from parent class" />
+    <MESSAGE value="Minor changes&#10;Unneeded imports" />
+    <MESSAGE value="Testing if date is right now" />
+    <MESSAGE value="FutureAction corrected test" />
+    <MESSAGE value="Opportunity Tests" />
+    <MESSAGE value="Tests success&#10;Opportunity throwing NullPointerException" />
+    <MESSAGE value="Testing Client" />
+    <MESSAGE value="Building Client from Opportunity" />
+    <MESSAGE value="Minor Changes" />
+    <MESSAGE value="Minor Changes&#10;Test Get/Post mapping" />
+    <MESSAGE value="Login methods" />
+    <MESSAGE value="Relocating files to Back folder" />
+    <MESSAGE value="Adding Front&#10;Most of code is from user [@JSalram](https://github.com/JSalram) but adapted to my own code" />
+    <MESSAGE value="Adding Front&#10;Most code is from user [@JSalram](https://github.com/JSalram) but adapted to my own code" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adding Front&#10;Most code is from user [@JSalram](https://github.com/JSalram) but adapted to my own code" />
+  </component>
+</project>
