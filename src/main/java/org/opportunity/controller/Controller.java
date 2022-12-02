@@ -24,13 +24,13 @@ public class Controller {
             return Service.content;
         }
     }
-    @PostMapping("Contacts")
+    @PostMapping("contacts")
     public List<Action> getActions(@RequestBody String body) throws Exception {
         LocalDate date = LocalDate.now();
         return List.of(
                 new Contact("Alice", VIA.EMAIL, date, "Presentation"),
                 new Contact("Bob", VIA.PHONE, date, "Sending Information"),
-                new FutureAction("Carol", VIA.VISIT, date)
+                new FutureAction("Carol", VIA.VISIT, date.plusDays(1))
         );
     }
 
