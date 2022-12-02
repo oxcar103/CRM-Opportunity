@@ -15,6 +15,15 @@ import java.util.Map;
 @CrossOrigin
 @RequestMapping("/")
 public class Controller {
+    @GetMapping("hello")
+    public String helloWorld(){
+        return "<h1>Hello, world!</h1>";
+    }
+
+    @GetMapping("error")
+    public String errorState(){
+        return "<h1>Oh, no!</h1><h2>Don't worry, our monkeys know this error and they're working in it.</h2>";
+    }
     @GetMapping("index")
     public String getIndex() {
         if (!Service.isInactive()) {
